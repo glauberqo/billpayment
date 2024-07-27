@@ -1,0 +1,5 @@
+ALTER TABLE bill
+ALTER COLUMN due_date TYPE DATE USING due_date::DATE;
+
+ALTER TABLE bill
+ALTER COLUMN payment_date TYPE DATE USING payment_date::DATE;
